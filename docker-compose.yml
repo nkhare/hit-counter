@@ -1,6 +1,6 @@
 # A simple Python Web Service configuration
 web:
-  build: .
+  image: nkhare/hitcounter
   command: python app.py
   ports:
    - "5000:5000"
