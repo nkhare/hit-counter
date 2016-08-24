@@ -8,7 +8,7 @@ redis = Redis(host=os.environ.get('REDIS_HOST', 'redis'), port=6379)
 def hello():
     visits = redis.incr('hits')
     
-    html = "<h3>Hello HPE Bangalore #5 !!</h3> <br/>" \
+    html = "<h3>Hello HPE Bangalore #6 !!</h3> <br/>" \
            "<h2>No. Hits:</2> {hits}<br/>"
            
     return html.format(hits=visits)
