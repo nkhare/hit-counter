@@ -1,10 +1,12 @@
 # A simple Python Web Service configuration
-web:
-  image: nkhare/hitcounter
-  command: python app.py
-  ports:
-   - "5000:5000"
-  links:
-   - redis
-redis:
-  image: redis:latest
+version: "2" 
+Services: 
+  web:
+    image: nkhare/hitcounter
+    command: python app.py
+    ports:
+     - "5000:5000"
+    links:
+     - redis
+  redis:
+    image: redis:latest
