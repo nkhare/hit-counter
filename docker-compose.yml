@@ -1,5 +1,5 @@
 # A simple Python Web Service configuration
-version: "2" 
+version: '2' 
 Services: 
   web:
     image: nkhare/hitcounter
